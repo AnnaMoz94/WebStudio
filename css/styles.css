@@ -1,0 +1,346 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Regular.woff2') format('woff2'),
+        url('/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Medium.woff2') format('woff2'),
+        url('/fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Bold.woff2') format('woff2'),
+        url('/fonts/Roboto-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Black.woff2') format('woff2'),
+        url('/fonts/Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Roboto";
+    color: #212121;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+    padding: 24px 0;
+    font-weight: 500;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    margin-right: 93px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 50px;
+}
+
+.header-menu-item a.active {
+    color: #2196F3
+}
+
+.header-menu-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header-menu-item:hover a {
+    color: #2196F3;
+}
+
+.header-menu-right {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
+.header-menu-right-item a.active {
+    color: #2196F3
+}
+
+.header-menu-right-item a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.header-menu-right-item:hover a {
+    color: #2196F3;
+}
+
+/* HERO */
+
+.hero {
+    height: 600px;
+    background: #2F303A;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: 900;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #FFF;
+    margin-bottom: 30px;
+    letter-spacing: 2.64px;
+}
+
+.hero-button {
+    background: #2196F3;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px 46px 15px;
+    color: #FFF;
+    border-radius: 4px;
+    letter-spacing: 0,96px;
+    display: inline-block;
+}
+
+.hero-button:hover {
+    background: #0962ac;
+}
+
+/* ABOUT */
+
+.about {
+    padding: 94px 0 0;
+}
+
+.about-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.about-card {
+    flex: 1 1 25%;
+}
+
+.about-title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.about-desc {
+    color: #757575;
+    text-align: justify;
+}
+
+/* DO */
+
+.do {
+    padding: 94px 0;
+}
+
+.do-title {
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0 0 50px;
+    text-align: center;
+}
+
+.do-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.do-card {
+    flex: 1 1 33%;
+    height: 294px;
+}
+
+.do-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 60px 0;
+    background: #2F303A;
+    color: #FFF;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer-menu-desc {
+    color: #FFF;
+}
+
+.footer-menu-item {
+    color: #757575;
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+.footer-menu-item:hover {
+    color: #1262a3;
+}
+
+/* TEAM */
+
+.team {
+    background: #F5F4FA;
+    padding: 94px 0;
+}
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 1.08px;
+    margin: 0 0 50px;
+}
+.team-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.team-card {
+    flex: 1 1 25%;
+    height: 780;
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);   
+}
+
+.team-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-info {
+    text-align: center;
+    font-size: 16px;
+}
+
+.team-card-name {
+    font-weight: 500;
+    margin: 30px 68px 10px;
+}
+.team-card-prof {
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+.portfolio-menu {
+    padding: 94px 0;
+}
+
+.container-button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-button { 
+    background: #F5F4FA;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 6px 26px;
+    border-radius: 4px;
+    line-height: 26px;
+}
+
+.portfolio-button:hover {
+    background: #2196F3;
+    color: #FFF;
+}
+
+.portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.portfolio-card {
+    flex: 1 1 25%;
+    height: 294;
+    border: 1px solid #EEE;
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-info {
+    margin: 20px 24px;
+    text-align: left;
+}
+
+.portfolio-card-name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.portfolio-card-prof {
+    color: #757575;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+
