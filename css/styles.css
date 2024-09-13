@@ -392,17 +392,31 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    padding: 30px 0 0;
+    padding: 20px 0 0;
     display: none;
 }
 
-.header-menu li:hover ul {
+.header-second-menu li {
+    position: relative;
+}
+
+.header-menu>li:hover .header-second-menu {
     display: block;
 }
 
-.header-second-menu-item {
+.header-second-menu li {
     padding: 8px 0 0;
 }
 
+.header-second-menu ul {
+    position: absolute;
+    top: 0;
+    right: 110%;
+    display: none;
+}
+
+.header-second-menu li:hover ul {
+    display: block;
+}
 
 
