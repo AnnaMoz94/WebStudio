@@ -336,13 +336,8 @@ body {
 .portfolio-card {
     flex: 1 1 30%;
     border: 1px solid #EEE;
-    /* position: relative; */
 }
-
-/* .portfolio-card:hover .portfolio-paragraf {
-    display: block;
-} */
-
+    
 .portfolio-paragraf {
     color: #FFF;
     font-size: 18px;
@@ -352,6 +347,8 @@ body {
     inset: 0;
     display: none;
     background:rgba(14, 38, 252, 0.5);
+    padding: 24px;
+    align-items: center;
 }
 
 .portfolio-foto {
@@ -365,8 +362,8 @@ body {
     object-fit: cover;
 }
 
-.portfolio-foto:hover .portfolio-paragraf {
-    display: block;
+.portfolio-card:hover .portfolio-paragraf {
+    display: flex;
 }
 
 .portfolio-info {
@@ -385,6 +382,26 @@ body {
     font-size: 16px;
     line-height: 30px;
     font-weight: 400;
+}
+
+.header-menu>li {
+    position: relative;
+}
+
+.header-second-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 30px 0 0;
+    display: none;
+}
+
+.header-menu li:hover ul {
+    display: block;
+}
+
+.header-second-menu-item {
+    padding: 8px 0 0;
 }
 
 
