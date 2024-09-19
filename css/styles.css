@@ -246,6 +246,7 @@ body {
     padding: 60px 0;
     background: #2F303A;
     color: #FFF;
+    position: relative;
 }
 
 .footer-logo {
@@ -413,6 +414,7 @@ body {
 }
 
 .header-second-menu {
+    background: #FFF;
     position: absolute;
     top: 100%;
     left: 0;
@@ -422,25 +424,150 @@ body {
 
 .header-second-menu li {
     position: relative;
+    padding: 10px 20px 10px 0;
 }
 
 .header-menu>li:hover .header-second-menu {
     display: block;
 }
 
-.header-second-menu li {
-    padding: 8px 0 0;
-}
-
 .header-second-menu ul {
     position: absolute;
     top: 0;
-    right: 110%;
+    right: 100%;
+    width: 100%;
     display: none;
+    background: #FFF;
 }
 
 .header-second-menu li:hover ul {
     display: block;
 }
 
+/* SVG */
 
+.list {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.list a {
+    line-height: 10px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.list svg {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.list a:hover svg {
+    fill: #FFF;
+}
+
+.list a:hover {
+    background: #2196F3;
+    transition: all 1s ease-in-out;
+}
+/* CUSTOMERS */
+
+.customers {
+    padding: 94px 0;
+}
+
+.customers-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    margin: 0 0 50px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 30px;
+}
+
+.customers-list a {
+    line-height: 10px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+}
+
+.customers-list svg {
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+}
+
+.customers-list a:hover svg {
+    fill: #2196F3;
+    transition: all 2s ease-in;
+}
+
+.customers-list a:hover {
+    background: #FFF;
+    border: 1px solid #2196F3;
+    transition: all 2s ease-in
+}
+
+/* Footer-menu-right */
+
+.footer-menu-right {
+    display: block;
+    position: absolute;
+    top: 66px;
+    right: 700px;
+}
+
+.footer-menu-right-name {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.footer-menu-right-list {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-menu-right-list a {
+    line-height: 10px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #575656;
+}
+
+.footer-menu-right-list svg {
+    width: 20px;
+    height: 20px;
+    fill: #FFF;
+}
+
+.footer-menu-right-list a:hover svg {
+    fill: #FFF;
+}
+
+.footer-menu-right-list a:hover {
+    background: #2196F3;
+    transition: all 1.5s ease-in-out;
+}
