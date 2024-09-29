@@ -50,6 +50,14 @@ body {
     margin: 0 auto;
 }
 
+.hidden {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
 /* HEADER */
 
 .header {
@@ -103,6 +111,10 @@ body {
 
 .header-menu-right-item:hover a {
     color: #2196F3;
+}
+
+.header-burger {
+    display: none;
 }
 
 /* HERO */
@@ -160,7 +172,7 @@ body {
 }
 
 .about-fon {
-    width: 270px;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
@@ -571,3 +583,167 @@ body {
     background: #2196F3;
     transition: all 1.5s ease-in-out;
 }
+
+/* 1200px */
+
+@media (max-width: 1200px) {
+
+.header {
+    padding: 19px 0 20px;
+}
+.header-logo {
+    margin-right: 40px;
+}
+
+.header-logo img {
+    width: 134px;
+    height: 28px;
+}
+
+.header-menu, 
+.header-menu-right {
+    gap: 20px;
+}
+
+.hero {
+    background-size: cover;
+}
+
+.team {
+    margin-top: 60px;
+}
+
+.do,
+.customers,
+.footer-menu-right {
+    display: none;
+}
+
+.footer {
+    margin-top: 60px;
+}
+
+.team-cards {
+    gap: 10px
+}
+
+.portfolio-menu {
+    padding: 60px 0;
+}
+
+.container-button {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+}
+
+/* 992px */
+
+@media (max-width: 992px) {
+.about {
+    padding: 60px 0 0;
+} 
+
+.about-cards {
+    flex-wrap: wrap;
+}
+
+.about-card {
+    flex: 1 1 45%;
+}
+
+.team {
+    padding: 60px 0 0;
+}
+
+.team-cards {
+flex-wrap: wrap;
+}
+
+.team-card {
+flex: 1 1 45%;
+}
+}
+
+/* 768px */
+
+@media (max-width: 768px) {
+.header-menu, 
+.header-menu-right {
+   display: none;
+}
+
+.header-burger {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.header-burger::before,
+.header-burger::after,
+span {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: black;
+}
+
+.header-burger::after {
+    top: auto;
+    bottom: 0;
+}
+
+.header-burger span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.portfolio-cards {
+    gap: 15px;
+}
+.portfolio-card {
+    flex: 1 1 100%;
+}
+}
+
+/* 600px */
+
+@media (max-width: 600px) {
+.hero {
+    height: 400px;
+}
+
+.hero-title {
+    font-size: 26px;
+}
+
+.about-card {
+    flex: 1 1 100%;
+}
+
+.team-title {
+    font-size: 28px;
+}
+
+.team-card {
+    flex: 1 1 100%;
+}
+
+.footer {
+    height: 251px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+
+
+
+
